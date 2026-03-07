@@ -15,6 +15,12 @@
     "db:studio": "drizzle-kit studio",
     "db:check": "drizzle-kit check"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  },
   "dependencies": {
     "@ai-sdk/groq": "^3.0.29",
     "@ai-sdk/openai": "^3.0.38",
