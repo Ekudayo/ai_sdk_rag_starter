@@ -83,6 +83,7 @@ import { createResource } from "@/lib/actions/resources";
 import { convertToModelMessages, streamText, tool, UIMessage } from "ai";
 import { z } from "zod";
 import { groq } from "@ai-sdk/groq";
+export const dynamic = "force-dynamic";
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
