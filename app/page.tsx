@@ -24,13 +24,13 @@ export default function Chat() {
                   case "tool-getInformation":
                     return (
                       // 3. Added key={index} to this paragraph as well
-                      <p key={index}>
+                      <div key={index}>
                         call{part.state === "output-available" ? "ed" : "ing"}{" "}
                         tool: {part.type}
                         <pre className="my-4 bg-zinc-100 p-2 rounded-sm">
                           {JSON.stringify(part.input, null, 2)}
                         </pre>
-                      </p>
+                      </div>
                     );
                   default:
                     return null; // Always include a default return in a switch map
